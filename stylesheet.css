@@ -37,3 +37,16 @@
   border-radius: 6px;   /* rounded corners, optional */
   cursor: pointer;      /* pointer on hover */
 }
+
+.video-container {
+  display: flex;
+  justify-content: center; /* center videos */
+  gap: 20px; /* spacing between videos */
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+.video-container iframe {
+  width: 400px; /* adjust width */
+  height: 225px; /* 16:9 aspect ratio */
+  border: none;
+}
