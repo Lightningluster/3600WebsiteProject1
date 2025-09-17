@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+            <title>My Webpage</title>
+            <link rel="stylesheet" href="Website.css">
+        </head>
+        <body>
+            <h1>Welcome!</h1>
+            <p>This is a paragraph with external CSS styling.</p>
+        </body>
+
+<div class="tab-container">
+  <button class="tab-button active" onclick="openTab(event, 'content1')">Videos</button>
+  <button class="tab-button" onclick="openTab(event, 'content2')"></button>
+  <button class="tab-button" onclick="openTab(event, 'content3')">Links</button>
+</div>
+
+<div id="content1" class="tab-content active">
+  <h2>Videos!</h2>
+  <p>Handpicked for you!</p>
+  <body>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/xWf4SoTIiDE?si=un5SDO3uC03GkwDL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ </body>
+
+<div id="content2" class="tab-content">
+  <h2>I am so Awesome</h2>
+  <p>These things make me a good person.</p>
+</div>
+
+<div id="content3" class="tab-content">
+  <h2>Content for Tab 3</h2>
+  <p>This is the content for the third tab.</p>
+</div>
+
+
+</html>

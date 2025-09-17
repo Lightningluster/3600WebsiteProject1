@@ -1,0 +1,39 @@
+    h1 {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    color: rgb(212, 0, 255);
+  }
+
+  h2 {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    color: rgb(212, 0, 255);
+  }
+
+  p {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+  }
+
+  body {
+  font-family: 'Inter', sans-serif;
+  background: #420404;
+  color: #f0f0f0;
+  line-height: 1.7;
+  overflow-x: hidden;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center; /* centers the buttons horizontally */
+  gap: 10px; /* optional: adds spacing between buttons */
+}
+
+.tab-button {
+  padding: 12px 24px;   /* bigger inside spacing */
+  font-size: 18px;      /* larger text */
+  border-radius: 6px;   /* rounded corners, optional */
+  cursor: pointer;      /* pointer on hover */
+}
