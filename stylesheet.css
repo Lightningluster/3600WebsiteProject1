@@ -7,7 +7,7 @@
   h2 {
     text-align: center;
     font-family: Verdana, sans-serif;
-    color: rgb(212, 0, 255);
+    color: rgb(255, 179, 0);
   }
 
   p {
@@ -17,7 +17,7 @@
 
   body {
   font-family: 'Inter', sans-serif;
-  background: #420404;
+  background: #1c0000;
   color: #f0f0f0;
   line-height: 1.7;
   overflow-x: hidden;
@@ -32,21 +32,75 @@
 }
 
 .tab-button {
-  padding: 12px 24px;   /* bigger inside spacing */
-  font-size: 18px;      /* larger text */
-  border-radius: 6px;   /* rounded corners, optional */
-  cursor: pointer;      /* pointer on hover */
-}
-
-.video-container {
-  display: flex;
-  justify-content: center; /* center videos */
-  gap: 20px; /* spacing between videos */
-  flex-wrap: wrap; /* allows wrapping on smaller screens */
-}
-
-.video-container iframe {
-  width: 400px; /* adjust width */
-  height: 225px; /* 16:9 aspect ratio */
+  background: none;
   border: none;
+  color: white;               /* Example text color */
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  border-bottom: 2px solid yellow; /* Highlight active tab */
+}
+
+#video-container {
+  display: flex;
+  justify-content: center; /* center videos horizontally */
+  gap: 20px;               /* spacing between videos */
+  flex-wrap: wrap;          /* wrap on smaller screens */
+}
+
+#video-container iframe {
+  width: 400px;  /* adjust as needed */
+  height: 225px; /* maintain 16:9 aspect ratio */
+  border: none;
+}
+
+
+ /* Style the navbar */
+#navbar {
+  display: flex;
+  justify-content: center;   /* Center the button group */
+  align-items: center;
+  background-color: #333;    /* Navbar background */
+  padding: 10px;
+  gap: 30px;                 /* Space between buttons */
+
+  position: sticky;          /* Stick in place while scrolling */
+  top: 0;                    /* Stick to the very top */
+  z-index: 1000;             /* Stay above other elements */
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  justify-content: center;  
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+} 
+
+.circle-image {
+  width: 200px;        /* adjust size */
+  height: 200px;
+  border-radius: 50%;  /* makes it circular */
+  object-fit: cover;   /* crop properly */
+  display: block;      /* allows margin auto centering */
+  margin: 0 auto;      /* centers horizontally */
+}
+
+img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+  justify-content: center;  
 }
