@@ -124,3 +124,22 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Default link style */
+#navbar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Active link style */
+#navbar a.active {
+  font-weight: bold;
+  color: blue;
+  border-bottom: 2px solid blue;
+}
+
+/* Optional: hover effect */
+#navbar a:hover {
+  color: darkblue;
+}

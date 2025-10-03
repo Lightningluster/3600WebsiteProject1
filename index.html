@@ -1,79 +1,56 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-            <title>My Webpage</title>
-            <link rel="stylesheet" href="stylesheet.css">
-        </head>
-        <body>
-            <h1>Welcome!</h1>
-            
-        </body>
-        
-        <img src="IMG_1688.jpg" alt="Circular" class="circle-image">
-          
+  <meta charset="UTF-8">
+  <title>Home - My Website</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <nav id="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+    <a href="signin.html">Sign In</a>
+    <a href="signup.html">Sign Up</a>
+  </nav>
 
-<div id="navbar">
-  <button class="tab-button active" onclick="openTab(event, 'content1')">Videos</button>
-  <button class="tab-button" onclick="openTab(event, 'content2')">Why I'm A Good Person</button>
-  <button class="tab-button" onclick="openTab(event, 'content3')">Links</button>
-</div>
+  <header>
+    <h1>Welcome!</h1>
+    <img src="IMG_1688.jpg" alt="Circular" class="circle-image">
+  </header>
 
-<div id="content1" class="tab-content active">
-  <h2>Videos!</h2>
-  <p>Handpicked for you!</p>
-    <div id="video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/xWf4SoTIiDE?si=un5SDO3uC03GkwDL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/eSenmX-NOfI?si=jYcwvQbWv1_FTJaz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/vmDRZMEPORM?si=e09A72kBtQKc4p38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-</div>
+  <main>
+    <article>
+      <h2>Introduction</h2>
+      <p>
+        Thank you for visiting my site. For now, this is just where I post some
+        <strong>Videos.</strong>. 
+        Hopefully you think they're as cool as I do. I spent a lot of time and a long period of my life making them, and I did so because something made me feel a certain way.
+      </p>
+    </article>
 
+    <article>
+      <h2>Purpose of This Website</h2>
+      <p>
+        This website was made for the CS3600 class at University of Idaho. I am not here of my own volition. Its fun messing around with HTML and all, but doing this on github just to host a site means I don't get to do a lot of the fun stuff I still want to learn...
+      </p>
+    </article>
 
+    <article>
+      <h2>Future Plans</h2>
+      <p>
+        I'm pretty sure I'm going to have to expand on this website at some point, but I haven't read the specifics yet. Hopefully it'll be fun, and maybe I'll get to mess around with more languages.
+      </p>
+    </article>
+  </main>
 
-<div id="content2" class="tab-content">
-  <h2>I am so Awesome</h2>
-  <p>It's clearly me doing the good thing in all of these examples.</p>
-  <div id="image-container">
-  <img src="spider-man-tobey-maguire-train-scene.png">
-  <img src="goku.png">
-  <img src="batman.png">
-</div>
-</div>
-
-
-<div id="content3" class="tab-content">
-  <h2>Links!</h2>
-  <p>All my cool stuff in an even cooler place.</p>
-  <p>
-  <a href="https://www.youtube.com/@Lightningluster"  style="color: rgb(0, 247, 255);">Youtube</a>
-  <br>
-  <a href="https://www.twitch.tv/lightningluster5" style="color: rgb(0, 247, 255);">Twitch</a>
-  <br>
-  <a href="https://lightningluster.github.io/3600WebsiteProject1/" style="color: rgb(0, 247, 255);">This Website!</a>
-  </p>
-
-
-</div>
-
-<script>
-function openTab(evt, tabId) {
-  // Hide all tab content
-  const tabs = document.querySelectorAll('.tab-content');
-  tabs.forEach(tab => tab.classList.remove('active'));
-
-  // Remove active class from all buttons
-  const buttons = document.querySelectorAll('.tab-button');
-  buttons.forEach(btn => btn.classList.remove('active'));
-
-  // Show the selected tab
-  document.getElementById(tabId).classList.add('active');
-
-  // Highlight the clicked button
-  evt.currentTarget.classList.add('active');
-}
-</script>
-
-
+  <footer>
+    <p>
+      <a href="terms.html">Terms and Conditions</a> | 
+      <a href="privacy.html">Privacy Policy</a> | 
+      <a href="cookies.html">Cookie Policy</a>
+    </p>
+  </footer>
+</body>
 </html>
